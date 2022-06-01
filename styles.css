@@ -1,0 +1,143 @@
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+
+}
+
+
+body{
+    color: black;
+    font-family: var(--FjallaOne);
+    font-size: 24px;
+    box-sizing: border-box;
+     display: grid;
+    grid-template-areas: 
+    'header header header'
+    'main main main'
+    'footer footer footer';
+}
+.header{
+    display: grid;
+    grid-area: header;
+    grid-template-columns: auto;
+    margin-left: 5px;
+    margin-right: 5px;
+    border: solid black 10px;
+    padding-top: 5%;
+    background-color: rgb(5, 67, 92);
+    background-image: url(./html5up-helios/images/header.jpg);
+    grid-template-rows: auto;
+    position: flex end;
+    font:600 var(--FjallaOne) 28px;
+}
+
+
+.card.card-image-top{
+    position: relative;
+    border-top: 5px;
+    height: 200px;
+    width: 200px;
+}
+.card-title{
+    color: navy;
+    background-color: rgb(220, 220, 217);
+    justify-self:right;
+}
+.card-text{
+    color: navy;
+    align-self: right;
+}
+.section.main.card-body{
+    position: absolute;
+    border: 3px solid navy;
+    width: 300px;
+
+}
+
+.main-menu{
+position: fixed top;
+height: 4rem;
+background-color: rgb(53, 101, 146);
+justify-items: left;
+font: 400 var(--FjallaOne) 36pt black;
+}
+.a.navbar-brand.h1{
+
+    align-content: left;
+    font: 800 solid 40pt black;
+    color: black;
+
+}
+.navbar.navbar-expand-lg.bg-light{
+    color: black;
+    position: relative;
+    top: 0;
+    grid-area: header;
+    background-image: url(./html5up-helios/images/pic06.jpg);
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-bottom: 10px;
+    border: 5px solid navy;
+    font:500 black bold var(--FjallaOne);
+    
+}
+
+.collapse.navbar-collapse{
+    position: sticky;
+}
+.navbar-nav{
+    position: sticky;
+    color: black 36pt;
+}
+.nav-link{
+   color: black bolder;
+    background-color: rgb(127, 165, 179);
+    border-radius: auto;
+    border-style: hidden;
+
+}
+
+.icons{
+    position: fixed bottom 0 end 0;
+}
+
+header,
+aside,
+main,
+nav{
+    color: rgb(73, 138, 195);
+}
+
+
+nav{
+    grid-area: header;
+    border: border-box;
+    border-color: black solid 2px;
+}
+.collapse.navbar-collapse{
+    margin-left: 500px;
+    justify-self: right;
+    margin-right: auto;
+    justify-content: flex-end;
+}
+
+a.navbar-brand.img{
+    position: fixed top;
+    max-width: 50px;
+    max-height: 50px;
+}
+main{
+    grid-area: main;
+}
+.col.card2{
+    border: 5px solid navy;
+    position: absolute;
+    background-image: url(./06.jpg);
+}
+
+footer{
+    display: grid;
+    grid-area: footer;
+    
+}
